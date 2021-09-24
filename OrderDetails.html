@@ -1,0 +1,282 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        .line {
+            border-bottom: 3px solid #000;
+            width: 100%;
+          
+        }
+
+        .line-light {
+            width: 100%;
+            border-bottom: 1px solid #949597;
+
+        }
+
+        .line-end {
+            width: 100%;
+            border-bottom: 3px solid #f0c29e;
+        }
+        
+
+        .data {
+            background-color: lightyellow;
+            padding-left: 45px;
+        }
+
+            .data .data-box {
+                margin-top: 60px;
+              
+            }
+
+                .data .data-box .data-separator {
+                    border-top: 1px solid #949597;
+                    width: 10%;
+                }
+
+        .content {
+            background-color: lightgoldenrodyellow;
+            padding-right: 45px;
+        }
+
+        .without-margin {
+            margin: 0 !important;
+        }
+
+       
+        .page {
+            page-break-after: always;
+            page-break-inside: avoid;
+            
+        }
+
+    </style>
+</head>
+<body>
+  <center> <h1>WELCOME TO  THE PIZZA SHOP</h1></center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-secondary mt-4" role="alert">
+                   <center> <b>Your Order Details </b> </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="app" class="container invoice">
+        <div class="row">
+            <!-- data -->
+            <div class="col-4 data py-4">
+                <div class="line mt-4 mb-4"></div>
+
+
+                <div class="data-box">
+                    <div class="data-separator d-block my-2"></div>
+                    <h4 class="text-muted font-weight-light">ORDER NO.</h4>
+                    <h4 class="font-weight-bold">23123123123</h4>
+                </div>
+                <div class="data-box">
+                    <div class="data-separator d-block my-2"></div>
+                    <h4 class="text-muted font-weight-light"> DATE</h4>
+                    <h4 class="font-weight-bold">23-09-2021</h4>
+                </div>
+
+
+                <div class="data-box">
+                    <h5 class="font-weight-bold">PAYMENT METHODS</h5>
+                    <h6 class="font-weight-light">CREDIT CARD</h6>
+
+                    <h6 class="font-weight-light">ACCOUNT NUMBER</h6>
+                    <p>1234567890988</p>
+
+                </div>
+
+            </div>
+            <!-- end data -->
+            <!-- content -->
+            <div class="col-8 content py-4">
+                <div class="line mt-4 mb-4"></div>
+                <!-- header -->
+                <div class="header">
+                    <div class="row">
+                        <div class="col-6 from">
+                            <span class="d-block font-weight-light"></span>
+                            <h3>DETAILS</h3>
+                            <span class="d-block font-weight-light">NAME:RAM</span>
+
+
+                            <span class="d-block font-weight-light">EMAIL:Ram@gmail.com</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="items-header">
+                    <div class="row mt-4 items-header font-weight-bold">
+                        <div class="col-12 my-2">
+                            <div class="line"></div>
+                        </div>
+                        <div class="col-6">ITEM</div>
+                        <div class="col-2 text-center">PRICE</div>
+                        <div class="col-2 text-center">QUANTITY</div>
+                        <div class="col-2 text-right">TOTAL</div>
+                        <div class="col-12 my-2">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end items-header -->
+                <!-- items -->
+                <div class="items">
+                    <div class="row mt-2 list-content">
+                        <div class="col-6">
+                            <p class="without-margin">SAUSAGE</p>
+                            <p class="without-margin text-muted">
+
+                            </p>
+                        </div>
+                        <div class="col-2 text-center">Rs 100</div>
+                        <div class="col-2 text-center">1</div>
+                        <div class="col-2 text-right">Rs 100</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <div class="line-light"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-6">
+                            <p class="without-margin">SPICY ITALIAN</p>
+                            <p class="without-margin text-muted">
+
+                            </p>
+                        </div>
+                        <div class="col-2 text-center">Rs 150</div>
+                        <div class="col-2 text-center">2</div>
+                        <div class="col-2 text-right">Rs 300</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <div class="line-light"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-6">
+                            <p class="without-margin">SPINACH ALFREDO</p>
+                            <p class="without-margin text-muted">
+
+                            </p>
+                        </div>
+                        <div class="col-2 text-center">Rs 49</div>
+                        <div class="col-2 text-center">2</div>
+                        <div class="col-2 text-right">Rs 98</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <div class="line-light"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-6">
+                            <p class="without-margin">MUSHROOM(Toppings)</p>
+                            <p class="without-margin text-muted">
+
+                            </p>
+                        </div>
+                        <div class="col-2 text-center">RS 20</div>
+                        <div class="col-2 text-center">1</div>
+                        <div class="col-2 text-right">Rs 20</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <div class="line-light"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-6">
+                            <p class="without-margin">ONIONS(Toppings)</p>
+                            <p class="without-margin text-muted">
+
+                            </p>
+                        </div>
+                        <div class="col-2 text-center">Rs 10</div>
+                        <div class="col-2 text-center">1</div>
+                        <div class="col-2 text-right">Rs 10</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <div class="line-light"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-6">
+                            <p class="without-margin">GREEN PEPPERS(Toppings)</p>
+                            <p class="without-margin text-muted">
+
+                            </p>
+                        </div>
+                        <div class="col-2 text-center">Rs 10</div>
+                        <div class="col-2 text-center">1</div>
+                        <div class="col-2 text-right"> Rs 10</div>
+                    </div>
+                </div>
+                <!-- end items -->
+                <!-- values -->
+                <div class="values">
+                    <div class="row">
+                        <div class="col-12 my-2">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-10 font-weight-bold">
+                            SUBTOTAL
+                        </div>
+                        <div class="col-2 text-right font-weight-bold">Rs 538</div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-10">
+                            Discount 10%
+                        </div>
+                        <div class="col-2 text-right">-(Rs 53.8)</div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-10">
+                            Delivery charge
+                        </div>
+                        <div class="col-2 text-right">Rs 0</div>
+                        <div class="col-12 my-2">
+                            <div class="line-end"></div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 list-content">
+                        <div class="col-9">
+                            <h3 class="font-weight-bold">TOTAL</h3>
+                        </div>
+                        <div class="col-3 text-right">
+                            <h3 class="font-weight-bold">Rs 484.2</h3>
+                        </div>
+                    </div>
+                </div>
+                <h2>Thank you for ordering</h2>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>
+
